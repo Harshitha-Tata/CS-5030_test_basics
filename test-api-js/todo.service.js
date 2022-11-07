@@ -23,15 +23,18 @@ class todoservice{
     }
 
     add_todo(todo){
-        // Your code here
+        this.space.todo[3] = todo;
+        return this.space.todo;
     }
 
     delete_todo(id){
-        // Your code here
+        this.space.todo[id] = {};
+        return this.space.todo;
     }
 
     update_todo(id, todo){
-        // Your code here
+        this.space.todo[id] = todo;
+        return this.space.todo;
     }
 }
 
